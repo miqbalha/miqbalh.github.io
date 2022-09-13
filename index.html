@@ -4,6 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
     <!-- Bootstrap CSS -->
@@ -15,7 +16,7 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="background-color: #21d481">
       <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">Muh Iqbal Hardiyanto</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,9 +42,9 @@
 
     <!-- jumbotronn -->
     <section class="jumbotron text-center">
-      <img src="img/Imagekkn-removebg-preview.jpg" alt="Muh Iqbal H" width="200" class="rounded-circle img-thumbnail" />
+      <img src="img/iqbal.jpg" alt="Muh Iqbal H" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Muh Iqbal Hardiyanto</h1>
-      <p class="lead">Mahasiswa</p>
+      <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -62,10 +63,10 @@
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic soluta autem magni accusantium ea recusandae similique est eos pariatur voluptatum!</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quos nam, nobis sapiente vero et fugit reiciendis obcaecati praesentium expedita dolores doloribus maxime eveniet quo!</p>
           </div>
         </div>
@@ -90,7 +91,7 @@
         <div class="row">
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="img/projek/1.jpg" class="card-img-top" alt="Project 1" />
+              <img src="img/projek/1.jpg" class="card-img-top" alt="Project 1" height="200" width="200" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
@@ -98,7 +99,7 @@
           </div>
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="img/projek/2.jpg" class="card-img-top" alt="Project 2" />
+              <img src="img/projek/2.jpg" class="card-img-top" alt="Project 2" height="200" width="200" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
@@ -106,7 +107,7 @@
           </div>
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="img/projek/3.jpg" class="card-img-top" alt="Project 3" />
+              <img src="img/projek/3.jpg" class="card-img-top" alt="Project 3" height="200" width="200" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
@@ -176,7 +177,20 @@
       <p>Created By <a href="https://www.instagram.com/m.iqbalha/" class="text-white fw-bold">Muh Iqbal H</a></p>
     </footer>
     <!-- ahir footer -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to('.lead', { duration: 2, delay: 1.5, text: 'Mahasiswa' });
+      gsap.from('.jumbotron img', { duration: 1, y: -100, opacity: 0 });
+      gsap.from('.navbar', { duration: 1.5, y: '-100%', opacity: 0 });
+      gsap.from('.display-4', { duration: 1.5, x: -50, opacity: 0, delay: 0.5, ease: 'back' });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbz-ffR_nvufdbTlP_t4JRetEYkpJAyiGNM57bChASrRqcJbwDo1Yk2yiU54Da8XFNDB/exec';
